@@ -1,0 +1,27 @@
+{
+  "name": "valid_parentheses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ts": "ts-node index.ts",
+    "w": "npm-watch"
+  },
+  "watch": {
+    "ts": {
+      "patterns": ["**/*.ts"],
+      "extensions": "ts",
+      "run": "npm run ts"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "npm-watch": "^0.13.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
