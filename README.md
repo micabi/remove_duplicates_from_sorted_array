@@ -1,4 +1,6 @@
-# 配列から重複した値を取り除いた配列をつくる
+# 配列内から重複した値を取り除いた配列をつくる
+
+ただし、新しい配列をつくって返すのではなくnums自身を書き換えることが条件
 
 ```typescript
 const nums = [ 1, 1, 2 ];
@@ -21,7 +23,7 @@ function removeDuplicates ( nums: number[] ) {
   console.log( `nums(original): `, nums );
 
   let index: number = 1; // i + 1(右隣り)用のインデックス
-  for ( let i: number = 0; i < nums.length; i++ ) {
+  for ( let i: number = 0; i < nums.length; i++ ) { // index = i + 1の関係
 
     // 比較の添字にはi + 1ではなくindexを当てる
     while ( nums[ i ] === nums[ index ] ) { // 条件は===
